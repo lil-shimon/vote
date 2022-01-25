@@ -1,0 +1,41 @@
+type Contents @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+}
+
+enum STATUS {
+  CHECKING
+  DEVELOPING
+  THINKING
+  PREPARING_FOR_RELEASE
+  RELEASED
+  NONE
+}
+
+enum UserType {
+  ADMIN
+  USER
+}
+
+type User @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  password: String!
+  email: String!
+  typ: UserType
+}
+
+type Type @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+}
+
+type Request @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  titile: String!
+  description: String
+  Type: Type @hasOne
+  User: User @hasOne
+  status: STATUS
+  Contents: Contents @hasOne
+}
