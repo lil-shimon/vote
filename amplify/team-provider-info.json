@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-vote-dev-234348-authRole",
+      "UnauthRoleArn": "arn:aws:iam::251560624221:role/amplify-vote-dev-234348-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::251560624221:role/amplify-vote-dev-234348-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-vote-dev-234348-deployment",
+      "UnauthRoleName": "amplify-vote-dev-234348-unauthRole",
+      "StackName": "amplify-vote-dev-234348",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:251560624221:stack/amplify-vote-dev-234348/37db8fe0-7ded-11ec-a080-0a0b9656900f",
+      "AmplifyAppId": "d3svio05io7hxp"
+    }
+  }
+}
